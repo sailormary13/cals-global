@@ -1,0 +1,69 @@
+/* Styles for Wordpress core "Media-Text" block */
+
+.wp-block-media-text .wp-block-media-text__content {
+    padding: 0 4.6em;
+}
+
+.wp-block-media-text .wp-block-media-text__content h2 {
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.wp-block-media-text {
+    background-color: $white;
+    border-radius: .2em;
+}
+
+.wp-block-media-text.has-media-on-the-right {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: .2em;
+}
+
+.wp-block-media-text__media img{
+    border-top-left-radius: .2em;
+}
+
+.has-media-on-the-right .wp-block-media-text__media img {
+    border-top-left-radius: 0;
+    border-bottom-right-radius: .2em;
+}
+
+/* Small screen behavior: stack with media first for both left and right options
+* Stack sooner (WP default is max-width: 600)
+* More padding around text part
+* Remove img border radius from img on right
+*/
+@media (max-width: 900px) {
+    // This code worked in WP 5.2, but not with WP 5.3
+    .wp-block-media-text.is-stacked-on-mobile, .wp-block-media-text.has-media-on-the-right.is-stacked-on-mobile {
+        grid-template-columns: 100%!important;
+        grid-template-areas:
+            "media-text-media"
+            "media-text-content";
+    }
+
+    // Need this for WP 5.3
+    .wp-block-media-text .wp-block-media-text__content {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .wp-block-media-text.is-stacked-on-mobile.has-media-on-the-right .wp-block-media-text__content {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .wp-block-media-text.is-stacked-on-mobile.has-media-on-the-right .wp-block-media-text__media {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .wp-block-media-text .wp-block-media-text__content {
+        padding: 2.4em 2.4em;
+    }
+
+    .has-media-on-the-right .wp-block-media-text__media img {
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+}

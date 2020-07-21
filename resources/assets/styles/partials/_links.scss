@@ -1,0 +1,30 @@
+/* Links */
+a {
+    color: $blue;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+}
+
+a:focus {
+    outline: thin dotted;
+}
+
+.icon-circle {
+    display: inline-block;
+    width: 2.1rem;
+    height: 2.1rem;
+    border-radius: 50%;
+    background-color: $dark-gray;
+    padding: 0.4rem 0.4rem;
+    margin: .5em .1em 0;
+    text-align: center;
+}
+
+.small-link-text {
+    font-size: .8em;
+    text-transform: uppercase;
+}

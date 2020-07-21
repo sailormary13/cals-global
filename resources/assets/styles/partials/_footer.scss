@@ -1,0 +1,94 @@
+/* Styles for the footer */
+
+footer {
+    padding: 5rem 2rem 1rem;
+    background-color: $black;
+    color: $light-gray;
+}
+
+.footer-content {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.footer-widget-area {
+    margin: 0 1em;
+}
+
+@media only screen and (min-width: 768px) {
+    .footerWidgetAreas {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .footerWidgetAreas {
+        text-align: center;
+    }
+}
+
+footer .widget-title {
+    color: $light-gray;
+    margin: 1em 0 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: Verlag-Book;
+    font-size: 1em;
+}
+
+footer p {
+    margin-top: .4em;
+    line-height: 1.3;
+}
+
+footer a {
+    color: $light-gray;
+    transition: color .2s ease-in-out;
+}
+
+footer a:hover {
+    color: $lightest-gray;
+}
+
+#footer-copyright {
+    text-align: center;
+    margin-top: 3em;
+    font-size: .8em;
+    line-height: 1.2em;
+}
+
+.footer-svg path {
+    fill: $light-gray;
+    transition: fill .2s ease-in-out;
+}
+
+.footer-svg:hover path{
+    fill: $lightest-gray;
+}
+
+#cals-logo {
+    width: 100%;
+    max-width: 280px;
+}
+
+/* button styles for footer */
+.btn-footer{
+    background-color: transparent;
+    border: $light-gray solid 1px;
+    color: $light-gray;
+    transition: color .18s ease-in-out, border .18s ease-in-out;;
+}
+
+.btn-footer:hover {
+    color: $lightest-gray;
+    border: $lightest-gray solid 1px;
+}
+
+/* Entry footer is what WP calls the end of a post. Contains categories, etc. */
+.entry-footer {
+    margin-top: 2em;
+    margin-bottom: 3em;
+}
+

@@ -1,0 +1,54 @@
+@import "partials/_style-variables.scss";
+@import "partials/_fonts.scss";
+// @import "partials/_normalize.scss";
+@import "partials/_elements.scss";
+@import "partials/_forms.scss";
+@import "partials/_navigation.scss";
+@import "partials/_accessibility.scss";
+// @import "partials/_alignments.scss";
+// @import "partials/_clearings.scss";
+// @import "partials/_widgets.scss";
+// @import "partials/_content.scss";
+// @import "partials/_infinitescroll.scss";
+// @import "partials/_media.scss";
+@import "partials/_sections.scss";
+@import "partials/_header.scss";
+@import "partials/_typography.scss";
+@import "partials/_links.scss";
+@import "partials/_images.scss";
+@import "partials/_featured-stories.scss";
+@import "partials/_buttons.scss";
+@import "partials/_media-text-block.scss";
+@import "partials/_footer.scss";
+@import "partials/_posts-feed.scss";
+@import "partials/_misc.scss";
+@import "partials/_collaborators.scss";
+@import "partials/_gravity-forms.scss";
+@import "partials/_archives.scss";
+
+
+/* General */
+html {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $less-white;
+    color: $darkest-gray;
+    font-family: Verlag-Book;
+    font-size: 1.125rem;
+    line-height: 1.5em;
+    margin: 0;
+    /* overflow-x needed for full-width sections... could perhaps just apply to those sections instead of body */
+    overflow-x: hidden;
+}
+
+#main {
+    margin: 1.4rem 1.4rem 0;
+}
+
+@media only screen and (min-width: 768px) {
+    #main {
+        margin: 1.8rem 1.8rem 0;
+    }
+}

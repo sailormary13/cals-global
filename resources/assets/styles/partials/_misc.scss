@@ -1,0 +1,45 @@
+/* 
+* Styles that didn't fit in a category
+*/
+
+.badge {
+    border: 1px solid $dark-gray;
+    border-radius: .5em;
+    padding: 3px 10px;
+    margin: 5px;
+    text-align: center;
+    display: inline-block;
+    font-size: .8em;
+    line-height: 1.2em;
+}
+
+.search-result-container {
+    margin-bottom: 3em;
+    border-bottom: 1px solid $lightest-gray;
+    padding-bottom: .8em;
+}
+
+.wp-block-cals-global-blocks-section-img:before {
+    opacity: .1;
+}
+
+
+/* 
+* Helper classes for simple styles that come up frequently 
+*/
+
+.zero-bottom-margin {
+    margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .grid-2-column {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.hidden {
+    display: none;
+  }
+

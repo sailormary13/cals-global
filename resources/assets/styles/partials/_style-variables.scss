@@ -1,0 +1,35 @@
+/* Variables */
+$badger-red: #c5050c;
+$blue: #0479a8;
+$dark-blue: #04658b;
+$medium-gray: #646569;
+$dark-gray: #494949;
+$darkest-gray: #2f2f2f;
+$white: #f7f7f7;
+$less-white: #f2f2f2;
+$wheat: #faf1d4;
+$dark-red: #9b0000;
+$light-blue: #dadfe1;
+$light-gray: #adadad;
+$lightest-gray: #e1e1e3;
+$black: #212121;
+
+$all-colors: ($badger-red, $blue, $dark-blue, $medium-gray, $dark-gray, $darkest-gray, $white, $wheat, $dark-red, $light-blue, $light-gray, $lightest-gray, $black);
+
+
+// Sets font color in color swatches
+@function set-font-color-color-swatch($color) {
+    @if (lightness($color) > 60) {
+      @return $darkest-gray; // Lighter background, return dark color
+    } @else {
+      @return $white; // Darker background, return light color
+    }
+}
+
+@function set-border-color-swatch($color) {
+    @if (lightness($color) > 90) {
+      @return 1px solid $darkest-gray; // Lighter backgorund, return dark color
+    } @else {
+      @return none; // Darker background, return no border
+    }
+}

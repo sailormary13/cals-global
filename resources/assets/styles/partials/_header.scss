@@ -1,0 +1,300 @@
+/* Variables */
+@import './_style-variables.scss';
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+.site-title {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-family: Verlag-Bold;
+    letter-spacing: 1px;
+}
+
+@media only screen and (min-width: 358px) and (max-width: 500px) {
+  .site-title {
+    font-size: 1.6em;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .site-title {
+    font-size: 2.2em;
+  }
+}
+
+.site-title a {
+    color: $darkest-gray;
+    text-decoration: none;
+}
+
+.custom-logo {
+    width: 100px;
+    height: 100px;
+}
+
+.container-in-header {
+    margin: 1.2rem 1.4rem;
+    padding: .4rem 0;
+  }
+
+.container-in-header-content {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/*--------------------------------------------------------------
+# UW Bar
+--------------------------------------------------------------*/
+
+#uw-bar {
+  background-color: $badger-red;
+  color: $white;
+  text-transform: uppercase;
+  font-size: .7rem;
+  padding: .2em 1.2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media only screen and (min-width: 346px) {
+  #uw-bar {
+    font-size: .8em;
+  }
+}
+  
+#uw-madison-link {
+  color: $white;
+  margin-right: 25px;
+  text-decoration: none;
+}
+
+#uw-madison-link:hover {
+  text-decoration: none;
+}
+
+#uw-bar-right-content {
+  display: flex;
+  align-items: center;
+}
+
+#uw-bar-right-content a {
+  color: $white;
+  text-decoration: none;
+}
+
+#uw-bar-right-content a:hover {
+  text-decoration: underline;
+}
+
+#uw-bar-links {
+  margin-right: 1.7em;
+  display: flex;
+  flex-direction: row;
+}
+
+#uw-bar-links nav {
+  font-size: 1em;
+}
+
+#uw-bar-secondary-nav {
+  margin-right: 1.6em;
+}
+
+
+/*--------------------------------------------------------------
+# Search feature
+--------------------------------------------------------------*/
+
+#search-button {
+  cursor: pointer;
+  margin: 0;
+  border: 0;
+  padding: .2em 0 0;
+}
+
+#search-display {
+  z-index: 20;
+  width: 100%;
+  // background-color: rgba(225, 225, 227, .95);
+  background-color: rgba(197, 5, 12, .8);
+  padding: 2em 0em 2em .5em;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .3s ease-in-out;
+}
+
+#search-display.toggled2 {
+  opacity: 1 !important;
+  pointer-events: unset;
+}
+
+@media only screen and (min-width: 570px) {
+  #search-display {
+    padding: 2em;
+  }
+}
+
+@media only screen and (min-width: 1023px) {
+  #search-display {
+    text-align: center;
+  }
+}
+
+#search-display .search-form-container .search-submit {
+  color: $white;
+  border: 1px solid $white;
+  margin: 0;
+}
+
+#search-display .search-form-container .search-submit svg path {
+  fill: $white;
+}
+
+#search-display .search-form-container .search-submit:hover {
+  border: 1px solid transparent;
+  background-color: transparent;
+}
+
+#search-close-button svg path {
+  fill: $white;
+}
+
+#search-close-button {
+  position: absolute;
+  top: 2px;
+  right: 18px;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+  
+  
+/*--------------------------------------------------------------
+# Site Name Bar
+--------------------------------------------------------------*/
+  
+#site-name-bar {
+  padding-top: .1rem;
+  padding-bottom: 0rem;
+}
+
+@media only screen and (min-width: 768px) {
+  #site-name-bar {
+    padding-top: 1em;
+  }
+}
+
+.site-branding {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@media only screen and (min-width: 600px) {
+  .site-branding {
+    margin-right: 5em;
+  }
+}
+
+#uw-crest {
+  width: 30px;
+}
+
+@media only screen and (min-width: 450px) {
+  #uw-crest {
+    width: 50px;
+  }
+}
+
+.site-title-description-group {
+  display: flex;
+  flex-direction: column;
+  margin-left: .4em;
+  justify-content: center;
+  margin-top: .2em;
+}
+
+@media only screen and (min-width: 500px) {
+  .site-title-description-group {
+    margin-left: .6em;
+    margin-top: .8em;
+  }
+}
+
+.site-description {
+  font-size: .45em;
+  margin: 0 0 .4em .2em;
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 358px) and (max-width: 500px) {
+  .site-description {
+    font-size: .55em;
+    margin-top: .3em;
+    margin: .3em 0 .3em .2em;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .site-description {
+    font-size: .7em;
+    margin: .8em 0 0em .2em;
+  }
+}
+
+.site-branding-link {
+  text-decoration: none;
+  color: $darkest-gray;
+}
+
+/*--------------------------------------------------------------
+# CALS Global Logo background stamp
+--------------------------------------------------------------*/
+.cals-global-logo-container {
+  position: relative;
+  z-index: -1;
+}
+
+#globe-logo {
+  max-width: 730px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+@media only screen and (max-width: 422px) {
+  #globe-logo {
+    max-width: 260px;
+  }
+}
+
+@media only screen and (min-width: 422px) and (max-width: 920px) {
+  #globe-logo {
+    max-width: 350px;
+  }
+}
+
+@media only screen and (min-width: 920px) and (max-width: 1200px) {
+  #globe-logo {
+    max-width: 470px;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 2000px) {
+  #globe-logo {
+    max-width: 600px;
+  }
+}

@@ -1,0 +1,78 @@
+/* 
+* Style for archives pages, 
+* including the page that displays posts (index.php --> content-news.php), 
+* as well as other archive pages (archive.php)
+*/
+
+.archives-content {
+	padding-bottom: 7em;
+}
+
+.archives-content h2, .search-results-content h2 {
+	text-transform: none;
+	margin: 1.4em 0 0;
+	font-family: Verlag-Book;
+	font-size: 1.3em;
+	font-weight: normal;
+}
+
+
+@media only screen and (min-width: 767px) {
+	.posts-sidebar-wrapper {
+			display: grid;
+			grid-template-columns: 3fr 1fr;
+			grid-gap: 10em;
+	}
+}
+
+.posts-archive-post-unit {
+	margin: 2em 0;
+}
+
+
+@media only screen and (min-width: 700px) {
+	.thumbnail-title-wrapper {
+			display: flex;
+			align-items: center;
+	}
+}
+
+.posts-thumbnail {
+	margin-right: 1em;
+	img {
+			border-radius: .2em;
+			width: 120px;
+			height: 110px;
+			object-fit: cover;
+	}
+	img.default-post-img {
+		object-fit: fill;
+	}
+}
+
+.posts-archive-post-title {
+	margin-top: 0 !important;
+}
+
+.posts-archive-older-posts-nav {
+	margin-top: 4em;
+	margin-right: 2em;
+	a {
+			text-transform: none;
+			color: $blue;
+	}
+}
+
+#archives-dropdown-3 {
+	color: #666;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	padding: 5px 4px;
+	font-family: Verlag-Book;
+	font-size: .9em;
+	background-color: transparent;
+}
+
+.tag-link {
+	margin-right: .2em;
+}

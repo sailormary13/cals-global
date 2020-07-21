@@ -1,0 +1,1 @@
+Header spacing is weird if no logo. Logo is mandatory? Or have UW Crest always default.

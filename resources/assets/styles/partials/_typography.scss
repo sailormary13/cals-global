@@ -1,0 +1,138 @@
+/* Variables */
+@import './_style-variables.scss';
+
+/* Fonts */
+@import './_fonts.scss';
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+h1 {
+  text-transform: uppercase;
+  font-family: Verlag-Bold;
+  font-size: 2em;
+  margin: 1.4em 0 1.6em;
+  line-height: 1.2em;
+}
+
+
+@media only screen and (max-width: 374px) {
+  h1 {
+      font-size: 1.6em;
+  }
+}
+
+h1.entry-title {
+  text-align: center;
+  margin: 2.4em 0 1.8em;
+}
+
+h2 {
+  font-size: 1.6rem;
+  font-family: Verlag-Bold;
+  text-transform: uppercase;
+  margin: 4em 0 1.6em;
+}
+
+h3 {
+  font-size: 1.6rem;
+  font-family: Verlag-Bold;
+  color: $badger-red;
+  margin: 2em 0 .8em 0;
+}
+
+h4 {
+  font-size: 1.3rem;
+  font-family: Verlag-Bold;
+  margin: 1.3em 0;
+}
+
+h5 {
+  font-size: 0.83em;
+  font-family: Verlag-Book;
+  margin: 1.3em 0;
+  text-transform: uppercase;
+}
+
+p {
+  line-height: 1.6;
+  max-width: 880px;
+  margin: 1em 0;
+}
+
+p.centered-p {
+  margin: auto;
+}
+
+small {
+  font-size: 0.8em;
+  color: $medium-gray;
+}
+
+code {
+  font-size: 1em;
+}
+
+blockquote {
+  font-size: 1.6rem;
+  margin: 0 0 0px 0;
+  line-height: 1.4;
+  // border-bottom: 2px solid $badger-red; //over it
+  padding-bottom: 5%;
+}
+
+@media only screen and (max-width: 1200px) {
+  blockquote {
+      font-size: 1.125rem;
+  }
+}
+
+blockquote::before {
+  content: '“';
+  display: block;
+  font-family: Georgia, serif;
+  font-size: 7rem;
+  margin-bottom: -60px;
+  color: $badger-red;
+}
+
+.lowercase-text {
+  text-transform: lowercase;
+}
+
+.text-above {
+  font-size: .8rem;
+  text-transform: uppercase;
+  line-height: 1rem;
+}
+
+.featured-story-title {
+  text-transform: none;
+  max-width: 940px;
+  margin: 2.4em 0 1.4em;
+}
+
+.post-title {
+  text-transform: none;
+  max-width: 940px;
+  margin: 2.4em 0 0.1em;
+}
+
+.post-body-content {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+    max-width: 900px;
+    p {
+        line-height: 1.7em;
+    }
+}
+
+/* margin underneath date published on page with a single post (i.e. a post) */
+.entry-meta-single-post {
+  margin-bottom: 2.8em;
+}
+
+/* appears on archives pages */
+.posted-on {
+  color: $medium-gray;
+  font-size: .9em;
+}

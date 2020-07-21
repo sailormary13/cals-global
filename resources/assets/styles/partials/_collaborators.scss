@@ -1,0 +1,142 @@
+/* Styles for Collaborators page */
+
+.collaborator-container {
+    border: 1px $medium-gray solid;
+    border-radius: .2em;
+    padding: 1.4em 2em;
+    background-color: $less-white;
+}
+
+@media screen and (min-width: 768px) {
+    .collaborator-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 3em;
+    }
+}
+
+.collaborator-container {
+    h4 {
+        margin: 0;
+        font-family: Verlag-Book;
+        font-weight: normal;
+    }
+    p {
+        margin: 0;
+    }
+}
+
+a.collab-link {
+    text-decoration: none;
+    color: $darkest-gray;
+}
+
+/* Overlay on hover */
+.collaborator-container-plus {
+    position: relative;
+    margin-bottom: 1em;
+}
+
+.collaborator-container-plus .collab-overlay {
+    background: $blue;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    position: absolute;
+    padding: 0;
+    transition: opacity .5s;
+    border-radius: .2em;
+}
+
+.collaborator-container-plus:hover .collab-overlay {
+    opacity: .4;
+    transition: opacity .2s;
+}
+
+@media screen and (min-width: 430px) {
+    .collab-faculty-details {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: .5em;
+    }
+}
+
+.collab-keywords-countries-container {
+    margin-top: 2em;
+}
+
+@media screen and (min-width: 768px) {
+    .collab-keywords-countries-container {
+        margin-top: 0;
+        grid-gap: 8em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 4em;
+    }
+}
+
+@media screen and (min-width: 430px) and (max-width: 768px) {
+    .collab-keywords-countries-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 3em;
+        justify-items: center;
+    }
+}
+
+.collaborator-name {
+    font-size: 1.4em;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 430px) {
+    .collab-keywords-container {
+        margin-bottom: 1.8em;
+    }
+}
+
+.collab-search-label {
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-size: .875rem;
+    margin-right: .3em;
+}
+
+input[type="text"].collab-search-input {
+    border: $lightest-gray solid 1px;
+    background-color: $lightest-gray;
+    border-radius: .2rem;
+    padding: .6rem .7rem .5rem;
+    color: $dark-gray;
+    text-decoration: none;
+    letter-spacing: 1.2px;
+    font-size: .875rem;
+    line-height: 1.2rem;
+    width: 280px;
+    font-family: Verlag-Book;
+    margin-bottom: 1em;
+    :focus {
+        color: $dark-gray;
+    }
+}
+
+@media screen and (min-width: 540px) {
+    .collab-search-container {
+        float: left;
+        width: 50%;
+    }
+
+    .collab-add-edit-button-container {
+        float: right;
+        width: 50%;
+        text-align: right;
+    }
+}
+
+.collab-subtext {
+    text-align: center;
+    margin-top: -1.5em !important;
+    margin-bottom: 4em !important; 
+}

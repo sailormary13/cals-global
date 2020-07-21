@@ -1,0 +1,47 @@
+/* Styles for Gravity Forms */
+
+body .gform_wrapper .gform_body h2.gsection_title {
+    font-size: .8em;
+    font-weight: normal;
+    font-family: Verlag-Book;
+    letter-spacing: 1px !important;
+}
+
+body .gform_wrapper .gform_body .gsection {
+    margin: 4.2em 0 1.8em;
+}
+
+body .gform_wrapper .gform_body .gfield_label {
+    font-size: 1em;
+    font-family: Verlag-Bold;
+    font-weight: normal;
+}
+
+body .gform_wrapper .gform_footer input[type=submit] {
+    font-family: Verlag-Book;
+    border-radius: .2em;
+    background-color: transparent;
+    border: 1px solid $darkest-gray;
+    padding: .6rem .8rem .5rem;
+    color: $darkest-gray;
+    transition: background-color .18s ease-in-out;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    margin: 4em 0 3em 0;
+    font-size: .875rem;
+    line-height: 1.2rem;
+}
+
+body .gform_wrapper .gform_footer input[type=submit]:hover {
+    background-color: $darkest-gray;
+    color: $white;
+    cursor: pointer;
+}
+
+body .gform_wrapper .gform_footer {
+    text-align: right;
+}
+
+body .gform_wrapper .gform_body input[type=file] {
+    font-family: Verlag-Book;
+}

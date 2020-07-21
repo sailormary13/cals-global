@@ -1,0 +1,38 @@
+/*--------------------------------------------------------------
+# Sections
+--------------------------------------------------------------*/
+
+ section {
+    padding: 1rem 0;
+    margin: 3rem 0;
+}
+
+@media only screen and (min-width: 768px) {
+    section {
+        padding: 2rem 0;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    section {
+        padding: 3rem 0;
+    }
+}
+
+.section-content {
+    max-width: 1200px;
+    margin: auto;
+}
+
+section h2 {
+    margin-top: 2rem;
+}
+
+section:first-child {
+    margin-top: 0;
+}
+
+/* Eliminates gap between a section with bg and the footer */
+section:last-child {
+    margin-bottom: 0;
+}
